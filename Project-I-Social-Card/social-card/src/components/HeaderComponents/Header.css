@@ -1,1 +1,19 @@
 /* All styles for your header Components live here */
+.logo {
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+}
+
+.header-container {
+    display: flex;
+    border: solid 1px black;
+}
+
+.header-content {
+    margin: 10px;
+}
+
+.date {
+    color: lightgray;
+}
