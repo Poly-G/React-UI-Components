@@ -7,7 +7,7 @@ import HeaderContainer from './components/HeaderComponents/HeaderContainer';
 const App = () => {
   return (
     <div>
-  
+      <HeaderContainer />
     </div>
   );
 };
