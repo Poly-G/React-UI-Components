@@ -5,7 +5,7 @@ import './Header.css';
 import ImageThumbnail from './ImageThumbnail';
 import HeaderTitle from './HeaderTitle';
 
-export default function HeaderContainer() {
+ const HeaderContainer = () => {
   return (
     <div>
       <ImageThumbnail />
@@ -15,3 +15,5 @@ export default function HeaderContainer() {
     </div>
   )
 }
+
+export default HeaderContainer
