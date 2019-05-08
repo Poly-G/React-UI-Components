@@ -20,3 +20,11 @@
     height: 300px;
     border-radius: 5px;
 }
+
+.bold {
+    font-weight: bold;
+}
+
+.link {
+    color: lightgray;
+}

@@ -4,6 +4,7 @@ import './App.css';
 // import containers
 import HeaderContainer from './components/HeaderComponents/HeaderContainer';
 import CardContainer from './components/CardComponents/CardContainer';
+import Footer from './components/FooterComponents/Footer';
 
 
 const App = () => {
@@ -11,6 +12,7 @@ const App = () => {
     <div className="app">
       <HeaderContainer />
       <CardContainer />
+      <Footer />
     </div>
   );
 };
