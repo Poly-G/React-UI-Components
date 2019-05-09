@@ -9,7 +9,8 @@ import './Footer.css'
             like: 0,
             retweet: 0,
             isLiked: false,
-            isRetweeted: false
+            isRetweeted: false,
+            heart: "far fa-heart fa-2x"
         }
     }
 
@@ -17,12 +18,14 @@ import './Footer.css'
       if (!this.state.isLiked) {
         this.setState({
           like: this.state.like +1,
-          isLiked: true
+          isLiked: true,
+          heart: "fas fa-heart fa-2x"
         })
       } else {
          this.setState({
            like: this.state.like -1,
-           isLiked: false
+           isLiked: false,
+           heart: "far fa-heart fa-2x"
          })
       }
     }
@@ -47,7 +50,7 @@ import './Footer.css'
       <div className="footer">
         <i className="far fa-comment fa-2x"></i>
         <i onClick={this.handleRetweet} className="fas fa-sync fa-2x"><span className="number">{this.state.retweet}</span></i>
-        <i onClick={this.handleLike} className="far fa-heart fa-2x"><span className="number">{this.state.like}</span></i>
+        <i onClick={this.handleLike} className={this.state.heart}><span className="number">{this.state.like}</span></i>
         <i className="far fa-envelope fa-2x"></i>
       </div>
     )
