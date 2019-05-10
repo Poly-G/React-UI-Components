@@ -1,6 +1,10 @@
 import React from 'react';
 import './App.css';
+
+// components
 import CalculatorDisplay from './components/DisplayComponents/CalculatorDisplay';
+import ActionButton from './components/ButtonComponents/ActionButton';
+import NumberButton from './components/ButtonComponents/NumberButton';
 
 const numbers = [
   {
@@ -62,7 +66,28 @@ const zero = {
 const App = () => {
   return (
     <div className="app">
+
       <CalculatorDisplay />
+
+      <div className="button-container">
+        <div className="numbers-container">
+          <ActionButton text={clear.text} buttonStyle={'clear'} key={clear.text} />
+
+          <div className="middle-numbers">
+            {numbers.map((number) => (
+              <NumberButton text={number.text} buttonStyle={'numbers'} key={number.text} />
+            ))}
+          </div>
+
+          <ActionButton text={zero.text} buttonStyle={'zero'} key={zero.text} />
+        </div>
+
+        <div className="symbols-container">
+          {symbols.map((symbol) => (
+            <NumberButton text={symbol.text} buttonStyle={'symbols'} key={symbol.text} />
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
