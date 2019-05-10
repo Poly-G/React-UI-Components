@@ -3,9 +3,9 @@ import './Button.css';
 
 const NumberButton = props => {
   return (
-    <div>
+    <React.Fragment>
           <button className={props.buttonStyle}>{props.text}</button>
-    </div>
+    </React.Fragment>
   )
 }
 
