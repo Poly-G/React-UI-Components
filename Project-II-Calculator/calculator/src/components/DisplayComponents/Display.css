@@ -1,0 +1,11 @@
+.display {
+    color: white;
+    background-color: black;
+    height: 150px;
+}
+
+.number{
+    font-size: 80px;
+    padding-left: 90%;
+    padding-top: 30px;
+}
