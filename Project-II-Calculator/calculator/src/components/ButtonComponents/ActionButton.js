@@ -1,14 +1,12 @@
-import React, { Component } from 'react'
+import React from 'react';
 import './Button.css';
 
-class ActionButton extends Component {
-  render() {
-    return (
-      <div>
-        
-      </div>
-    )
-  }
+const ActionButton = () => {
+  return (
+    <div>
+      
+    </div>
+  )
 }
 
-export default ActionButton;
+export default ActionButton

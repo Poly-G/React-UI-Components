@@ -1,14 +1,13 @@
-import React, { Component } from 'react'
+import React from 'react'
 import './Button.css';
 
-class NumberButton extends Component {
-  render() {
-    return (
-      <div>
-        
-      </div>
-    )
-  }
+const NumberButton = () => {
+  return (
+    <div>
+      
+    </div>
+  )
 }
 
-export default NumberButton;
+export default NumberButton
+
