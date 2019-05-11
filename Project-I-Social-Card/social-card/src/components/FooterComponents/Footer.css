@@ -1,0 +1,15 @@
+.footer {
+    border: solid 1px black;
+    border-radius: 5px;
+    border-top: none;
+    height: 65px;
+}
+
+i {
+    margin: 20px;
+    margin-left: 40px;
+}
+
+.number {
+    margin-left: 10px;
+}
